@@ -5,8 +5,6 @@ import matter from 'gray-matter';
 import { remark } from 'remark'
 import html from 'remark-html'
 
-import type { InferGetStaticPropsType, GetStaticProps } from 'next'
-
 const postsDirectory = path.join(process.cwd(), 'src/posts');
 const fileNames = fs.readdirSync(postsDirectory);
 
