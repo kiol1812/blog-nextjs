@@ -4,7 +4,7 @@ import fs from 'fs';
 import path from 'path';
 
 const toURL_links = fs.readFileSync(`${path.join(process.cwd(), 'src')}/tmp.json`, 'utf-8');
-const {filenameToURL} = JSON.parse(toURL_links);
+const gistsData = JSON.parse(toURL_links);
 
 export default async function Gist({
     params,
@@ -18,22 +18,22 @@ export default async function Gist({
         <>
             <div className={styles.flexTest}>
                 <p className={styles.keys}>Chapter</p>
-                <p className={styles.values}>Selection Trees</p>
+                <p className={styles.values}>{(params.gistId).replace('_', ' ')}</p>
             </div>
             <div className={styles.flexTest}>
                 <p className={styles.keys}>Reference</p>
-                <p className={styles.values}>urltestestestestestestest</p>
+                <p className={styles.values}>{`${gistsData[`${params.gistId}`].reference}`}</p>
             </div>
             <div className={styles.flexTest}>
                 <p className={styles.keys}>Tags</p>
-                <p className={styles.values}>data structure</p>
+                <p className={styles.values}>{`${gistsData[`${params.gistId}`].tag}`}</p>
             </div>
             <div className={styles.flexTest}>
                 <p className={styles.keys}>Date</p>
-                <p className={styles.values}>2024/02/03</p>
+                <p className={styles.values}>{`${gistsData[`${params.gistId}`].date}`}</p>
             </div>
             <hr className={styles.hr} />
-            <script src={`${url}/${filenameToURL[`${params.gistId}`]}`}></script>
+            <script src={`${url}/${gistsData[`${params.gistId}`].url}`}></script>
         </>
     );
 }
