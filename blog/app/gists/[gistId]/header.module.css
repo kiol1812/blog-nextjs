@@ -14,7 +14,7 @@
     padding: 10px;
 }
 .hr{
-    border: 2px solid #005f75;
+    border: 2px solid #005f7533;
 }
 
 .box{
@@ -28,10 +28,9 @@
 .card{
     min-width: 900px;
     max-width: 1000px;
-    /* min-height: 1200px; */
-    background: #ffffe0;
-    border: #005f75 solid 5px;
-    border-radius: 3%;
+    border-radius: 2%;
+    box-shadow: -5px -5px 10px #FAFBFFff;
+    box-shadow: 5px 5px 10px #161B1D3A;
 }
 
 .doc{
@@ -42,7 +41,7 @@
 }
 .referBar{
     color: #005f75;
-    border-top: #005f75 solid 2px;
+    border-top: #005f7533 solid 2px;
     padding-left: 30px;
     font-size: 18px;
 }

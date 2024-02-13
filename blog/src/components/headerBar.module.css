@@ -1,0 +1,64 @@
+.textLink{
+    padding: 10px;
+    border-radius: 2%;
+    /* box-shadow: -5px -5px 10px #FAFBFFff;
+    box-shadow: 5px 5px 10px #161B1D3A; */
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    color: #005f75;
+    text-decoration: none;
+    font-size: 24px;
+}
+.headerBar{
+    /* background: linear-gradient(#00000000, #161B1D88); */
+    backdrop-filter: blur(5px);
+    /* border-bottom: #005f7533 solid 1px; */
+    margin-bottom: 10px;
+    position: relative;
+    height: 100px;
+}
+.headerBar_r{
+    position: absolute;
+    right: 0px;
+    width: 300px;
+}
+.search{
+    position: relative;
+    height: 32px;
+    top: 47px;
+    right: 30px;
+}
+.searchInput{
+    /* width: 100%; */
+    width: 200px;
+    height: 32px;
+    font-size: 20px;
+    /* border-radius: 10%; */
+    background: #00000000;
+    border: #005f7577 solid 1px;
+    position: absolute;
+    top: 0;
+    right: 0; 
+}
+.searchBtn{
+    outline:none;
+    background-color: #00000000;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0; 
+    height: 100%;
+    width: 25px;
+}
+.pinterestIcon{
+    position: absolute;
+    top: 47px;
+    left: 30px;
+}
+.githubIcon{
+    position: absolute;
+    top: 50px;
+    /* right: 10px; */
+    left: 0px;
+}

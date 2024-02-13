@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -16,31 +10,19 @@
   }
 } */
 
+:root{
+  --baseGround: #E2D7C3;
+  --baseComponent: #005f75;
+}
+
 *{
   padding: 0;
   margin: 0;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  background: #e2d7c3ae;
 }
 
-.gist{
-  display: block;
-  overflow: auto;
-  min-height: 30px;
-  padding: 0 0 0 11px;
-  border: 1px solid #c0c0c0;
-  background: #ffffe0 url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAASwCAYAAAAt7rCDAAAABHNCSVQICAgIfAhkiAAAAQJJREFUeJzt0kEKhDAMBdA4zFmbM+W0upqFOhXrDILwsimFR5pfMrXW5jhZr7PwRlxVX8//jNHrGhExjXzdu9c5IiIz+7iqVmB7Hwp4OMa2nhhwN/PRGEMBh3Zjt6KfpzPztxW9MSAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzAMwzB8HS+J9kUTvzEDMwAAAABJRU5ErkJggg==) left top repeat-y;
+@media (max-width=600px){
 }
-.markdown-body{
-  background: #ffffe0;
-  color: #005f75;
-}
-
-/* @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-} */
-  
