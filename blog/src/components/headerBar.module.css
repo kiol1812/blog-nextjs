@@ -52,13 +52,14 @@
     width: 25px;
 }
 .pinterestIcon{
-    position: absolute;
-    top: 47px;
-    left: 30px;
+    filter: invert(40%) sepia(100%) hue-rotate(145deg) saturate(180%);
 }
 .githubIcon{
-    position: absolute;
-    top: 50px;
-    /* right: 10px; */
-    left: 0px;
+    filter: invert(40%) sepia(100%) hue-rotate(145deg) saturate(180%);
+}
+.twitterIcon{
+    filter: invert(40%) sepia(100%) hue-rotate(145deg) saturate(180%);
+}
+.burger_li{
+    display: inline-block;
 }

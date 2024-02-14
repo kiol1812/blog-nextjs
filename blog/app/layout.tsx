@@ -2,7 +2,9 @@ import './globals.css'
 
 import type { Metadata } from "next";
 
-import headerBar from '@/src/components/headerBar';
+import HeaderBar from '@/src/components/headerBar';
+
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: "kiol",
@@ -17,7 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <header>{headerBar()}</header>
+        <header>
+          {/* <Image src="/images/github.png" width={24} height={24} alt='test'></Image> */}
+          <HeaderBar />
+        </header>
         <main>{children}</main>
       </body>
     </html>
