@@ -3,9 +3,9 @@
     border-radius: 2%;
     /* box-shadow: -5px -5px 10px #FAFBFFff;
     box-shadow: 5px 5px 10px #161B1D3A; */
-    position: absolute;
+    /* position: absolute;
     bottom: 0px;
-    left: 10px;
+    left: 10px; */
     color: #005f75;
     text-decoration: none;
     font-size: 24px;
@@ -16,50 +16,38 @@
     /* border-bottom: #005f7533 solid 1px; */
     margin-bottom: 10px;
     position: relative;
-    height: 100px;
+    height: 80px;
 }
-.headerBar_r{
+.Icons{
+    filter: invert(40%) sepia(100%) hue-rotate(145deg) saturate(180%);
+    padding-left: 10px;
+}
+.burger_li_icon{
+    display: inline-block;
+}
+.burgerLabel{
+    display: inline;
+    font-size: 32px;
+    color: #005f75;
     position: absolute;
-    right: 0px;
-    width: 300px;
+    right: 10px;
+    /* top: 0; */
+    bottom: 0;
 }
-.search{
-    position: relative;
-    height: 32px;
-    top: 47px;
-    right: 30px;
+.searchIcon{
+    filter: invert(40%) sepia(100%) hue-rotate(145deg) saturate(180%);
+    position: absolute;
+    top: 3px;
+    right: 5px;
 }
-.searchInput{
-    /* width: 100%; */
+.searchSection{
+    display: inline;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
     width: 200px;
     height: 32px;
-    font-size: 20px;
-    /* border-radius: 10%; */
-    background: #00000000;
-    border: #005f7577 solid 1px;
-    position: absolute;
-    top: 0;
-    right: 0; 
-}
-.searchBtn{
-    outline:none;
-    background-color: #00000000;
-    border: none;
-    position: absolute;
-    top: 0;
-    right: 0; 
-    height: 100%;
-    width: 25px;
-}
-.pinterestIcon{
-    filter: invert(40%) sepia(100%) hue-rotate(145deg) saturate(180%);
-}
-.githubIcon{
-    filter: invert(40%) sepia(100%) hue-rotate(145deg) saturate(180%);
-}
-.twitterIcon{
-    filter: invert(40%) sepia(100%) hue-rotate(145deg) saturate(180%);
-}
-.burger_li{
-    display: inline-block;
+    border: #005f75aa solid 3px;
+    border-radius: 25px;
+    padding-left: 15px;
 }

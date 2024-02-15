@@ -10,6 +10,7 @@ export default function layout({
     return (
         <section>
             <div>
+                {list()}
                 <main className={styles.box}>{children}</main>
             </div>
         </section>
