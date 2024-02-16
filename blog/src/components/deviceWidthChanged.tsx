@@ -3,7 +3,7 @@ import {useState, useEffect } from 'react';
 import styles from './headerBar.module.css';
 import styled from 'styled-components';
 import Link from 'next/link';
-import Image from 'next/image';
+import SocialMediaLinks from './socialMediaLinks';
 export const useRWD=()=>{
     const [device, setDevice]=useState(false);
     const handleRWD=()=>{
@@ -56,21 +56,13 @@ export function BurgerUl({ulState}:burPropType){
             <Burger_li_text key={"blog"} $liState={liState}>
                 <Link className={styles.textLink} href={'/gists'}>blog</Link>
             </Burger_li_text>
-            <li key={"github icon"} className={styles.burger_li_icon}>
-                <a href="https://github.io">
-                    <Image src={"/images/github.png"} width={24} height={24} className={styles.Icons} alt="github icon"></Image>
-                </a>
-            </li>
-            <li key={"pinterest icon"} className={styles.burger_li_icon}>
-                <a href="https://pinterest.com">
-                    <Image src={"/images/pinterest.png"} width={24} height={24} className={styles.Icons} alt="pinterest icon"></Image>
-                </a>
-            </li>
-            <li key={"twitter icon"} className={styles.burger_li_icon}>
-                <a href="https://twitter.com">
-                    <Image src={"/images/twitter-sign.png"} width={24} height={24} className={styles.Icons} alt="twitter icon"></Image>
-                </a>
-            </li>
+            <SocialMediaLinks />
         </Burger_ul>
+    );
+}
+
+export function SearchSelectionsPerShow(){
+    return (
+        <ul></ul>
     );
 }

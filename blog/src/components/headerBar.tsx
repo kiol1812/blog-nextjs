@@ -8,7 +8,7 @@ import { useState, useEffect } from 'react';
 
 import Image from 'next/image';
 
-import { BurgerLabel, BurgerUl, useRWD } from './deviceWidthChanged';
+import { BurgerLabel, BurgerUl, useRWD, SearchSelectionsPerShow } from './deviceWidthChanged';
 
 const BurgerCheckBox = styled.input`
     display: none;
@@ -41,13 +41,25 @@ const SearchBtn = styled.button`
 `;
 function SearchBar(){
     function handleSearchBtn(){}
+    const [inputStr, setInputStr] = useState("");
+    function searchValue(){
+        setInputStr("target");
+    }
+    // useEffect(()=>{
+    //     const input = document.getElementById("searchInput");
+    //     setInputStr(`${input?.textContent||input?.innerHTML}`);
+    //     console.log(input?.innerHTML);
+    // }, [inputStr])
     return (
-        <Search_frame>
-            <SearchInput />
-            <SearchBtn onClick={handleSearchBtn}>
-                <Image src={"/images/search.png"} width={24} height={24} className={styles.searchIcon} alt="search icon"></Image>
-            </SearchBtn>
-        </Search_frame>
+        <>
+            <Search_frame>
+                <SearchInput id='searchInput' onKeyUp={searchValue} placeholder='search' maxLength={50} />
+                <SearchBtn onClick={handleSearchBtn}>
+                    <Image src={"/images/search.png"} width={24} height={24} className={styles.searchIcon} alt="search icon"></Image>
+                </SearchBtn>
+            </Search_frame>
+            <SearchSelectionsPerShow />
+        </>
     );
 }
 export default function HeaderBar(){

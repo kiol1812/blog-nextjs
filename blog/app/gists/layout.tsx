@@ -1,7 +1,4 @@
 import styles from './[gistId]/header.module.css'
-
-import {list} from '../../src/components/gistKeyList'
-
 export default function layout({
     children,
 }:{
@@ -10,7 +7,6 @@ export default function layout({
     return (
         <section>
             <div>
-                {list()}
                 <main className={styles.box}>{children}</main>
             </div>
         </section>

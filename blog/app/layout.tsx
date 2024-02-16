@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from "next";
 import HeaderBar from '@/src/components/headerBar';
+import Footer from '@/src/components/footerBar';
 
 export const metadata: Metadata = {
   title: "kiol",
@@ -20,6 +21,9 @@ export default function RootLayout({
         </header>
         <hr />
         <main>{children}</main>
+        <footer>
+          <Footer />
+        </footer>
       </body>
     </html>
   );

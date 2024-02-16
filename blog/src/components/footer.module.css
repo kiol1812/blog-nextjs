@@ -1,0 +1,8 @@
+.footerBar{
+    display: inline-block;
+    width: 90%;
+    border-top: #005f7577 solid 2px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}

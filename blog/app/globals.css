@@ -21,8 +21,18 @@
   color: #005f75;
 }
 
+html {
+  height: 100%;
+}
 body {
   background: #e2d7c3ae;
+  height: 100%;
+}
+footer{
+  position: sticky;
+  top: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 header{
