@@ -38,6 +38,7 @@ const Burger_ul = styled.ul<{
     right: ${(props => (props.$device)?"15px":"280px")};
     top: ${(props => (props.$device)?"90px":"50px")};
     padding-right: 5px;
+    background: ${(props => (props.$device)?"#ffffff77":"none")};
 `;
 const Burger_li_text = styled.li<{$liState?:string}>`
     display: ${props => props.$liState};

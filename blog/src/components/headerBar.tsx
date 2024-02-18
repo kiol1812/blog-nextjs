@@ -41,9 +41,9 @@ const SearchBtn = styled.button`
 `;
 function SearchBar(){
     function handleSearchBtn(){}
-    const [inputStr, setInputStr] = useState("");
+    // const [inputStr, setInputStr] = useState("");
     function searchValue(){
-        setInputStr("target");
+        // setInputStr("target");
     }
     // useEffect(()=>{
     //     const input = document.getElementById("searchInput");
@@ -53,7 +53,7 @@ function SearchBar(){
     return (
         <>
             <Search_frame>
-                <SearchInput id='searchInput' onKeyUp={searchValue} placeholder='search' maxLength={50} />
+                <SearchInput id='searchInput' placeholder='search' maxLength={50} />{/* upkeyon={searchValue} */}
                 <SearchBtn onClick={handleSearchBtn}>
                     <Image src={"/images/search.png"} width={24} height={24} className={styles.searchIcon} alt="search icon"></Image>
                 </SearchBtn>
