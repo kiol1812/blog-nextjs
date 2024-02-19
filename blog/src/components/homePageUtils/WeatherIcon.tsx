@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useMemo } from "react";
 import styled from "styled-components";
 import { DayClear, DayCloudyFog, DayCloudy, DayFog, DayPartiallyClearWithRain, NightClear, NightCloudyFog, NightCloudy, NightFog, NightPartiallyClearWithRain,
-         AirFlowIcon, HumidIcon, RefreshIcon, LoadingIcon } from "../../public/weather_svg/allWeather";
+         AirFlowIcon, HumidIcon, RefreshIcon, LoadingIcon } from "../../../public/weather_svg/allWeather";
 
 type timeType = {
     Date:string,
@@ -240,7 +240,7 @@ const getMoment = (locationName:string, sunriseAndSunsetJSON:stempType)=>{
       ? "day"
       : "night";
 }
-export function WeatherBar({
+export default function WeatherBar({
     sunriseAndSunsetJSON,
 }:{
     sunriseAndSunsetJSON:stempType,
@@ -287,7 +287,6 @@ export function WeatherBar({
     const moment = useMemo(() => getMoment(currentWeather.locationName, sunriseAndSunsetJSON), [
         currentWeather.locationName,
     ]);
-    console.log(currentWeather.observationTime)
     return (
         <Container>
           <WeatherCard>

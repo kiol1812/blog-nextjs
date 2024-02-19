@@ -1,0 +1,16 @@
+.flexBox{
+    position: relative;
+    display: flex;
+    flex-direction:column;
+}
+.count{
+    font-size: 16px;
+}
+.goalTitle{
+    font-size: 16px;
+}
+.goalBox{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+}

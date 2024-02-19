@@ -18,16 +18,18 @@ const RightSide_ = styled.div`
 
 export default function HomepageFullContainer({
   leftsideElement,
+  centersideElement,
   rightsideElement,
 }:{
   leftsideElement: React.ReactNode,
+  centersideElement: React.ReactNode,
   rightsideElement: React.ReactNode,
 }){
     return (
         <FullContainer_>
           <TopDashBoard_>
             <LeftSide_>{leftsideElement}</LeftSide_>
-            <CenterSide_></CenterSide_>
+            <CenterSide_>{centersideElement}</CenterSide_>
             <RightSide_>{rightsideElement}</RightSide_>
           </TopDashBoard_>
         </FullContainer_>

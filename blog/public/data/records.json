@@ -1,0 +1,27 @@
+{
+    "2024-02-19":{
+        "test1" : true,
+        "test2" : true,
+        "test3" : true
+    },
+    "2024-02-20":{
+        "test1" : false,
+        "test2" : true,
+        "test3" : true
+    },
+    "2024-02-21":{
+        "test1" : true,
+        "test2" : false,
+        "test3" : true
+    },
+    "2024-02-22":{
+        "test1" : true,
+        "test2" : true,
+        "test3" : false
+    },
+    "2024-02-23":{
+        "test1" : false,
+        "test2" : false,
+        "test3" : false
+    }
+}

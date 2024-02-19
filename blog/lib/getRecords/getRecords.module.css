@@ -1,0 +1,24 @@
+.aSquare{
+    width: 10px;
+    height: 10px;
+    background: #99999933;
+    /* display: inline-block; */
+    margin: 2px;
+}
+.aSquare_005f7533{
+    width: 10px;
+    height: 10px;
+    background: #005f7577;
+    /* display: inline-block; */
+    margin: 2px;
+}
+.row{
+    display: inline-flex;
+    flex-direction:column;
+    max-height: 100px;
+}
+.squaresBox{
+    display: flex;
+    /* justify-content:space-between; */
+    flex-wrap:wrap;
+}
