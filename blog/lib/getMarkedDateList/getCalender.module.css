@@ -1,0 +1,37 @@
+.normal{
+    font-size: 10px;
+    background: #aaaaaa55;
+    height: 15px;
+    width: 15px;
+}
+.important{
+    font-size: 10px;
+    background: #005f7555;
+    height: 15px;
+    width: 15px;
+}
+.row{
+    display: inline-flex;
+    flex-direction: row;
+    /* flex-direction: column; */
+}
+.calenderBox{
+    display: flex;
+    flex-direction: column;
+    width: 110px;
+    /* flex-wrap: wrap; */
+}
+.normalAndIsToday{
+    color: red;
+    font-size: 10px;
+    background: #aaaaaa55;
+    height: 15px;
+    width: 15px;
+}
+.importantAndIsToday{
+    color: red;
+    font-size: 10px;
+    background: #005f7555;
+    height: 15px;
+    width: 15px;
+}

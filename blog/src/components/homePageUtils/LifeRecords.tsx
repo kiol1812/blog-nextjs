@@ -2,9 +2,10 @@
 import styled from "styled-components";
 
 const FullCatainter =  styled.div`
-    display: flex;
-    position: relative;
     width: 100%;
+    display: flex;
+    align-items: center,
+    justify-content: center,
 `;
 const Records = styled.div`
     display: flex;

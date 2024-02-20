@@ -1,16 +1,11 @@
 import fs from 'fs';
 import path from 'path';
-
 import styles from "./getRecords.module.css";
 
 const recordsJSON = JSON.parse(fs.readFileSync(`${path.join(process.cwd(), 'public')}/data/records.json`, 'utf-8'));
 
-type aDay={
-    [key:string] : boolean,
-}
-type records={
-    [key:string] : aDay,
-}
+type aDay={[key:string]:boolean,}
+type records={[key:string]:aDay,}
 
 function RecordsNest({
     recordsJSON,
@@ -33,7 +28,7 @@ function RecordsNest({
             let flag:boolean=true;
             for(const [key, values] of Object.entries(recordsJSON)){
                 if(key==theDate){
-                    aWeek.push((values.test1)?<div key={i*7+j} className={styles.aSquare_005f7533} />:<div className={styles.aSquare} />);
+                    aWeek.push((values.test1)?<div key={i*7+j} className={styles.aSquare_005f7533} />:<div key={i*7+j} className={styles.aSquare} />);
                     flag=false;
                 }
             }

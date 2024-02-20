@@ -10,10 +10,13 @@ const TopDashBoard_ = styled.div`
   justify-content: space-between;
 `;
 const LeftSide_ = styled.div`
+  width: 32%;
 `;
 const CenterSide_ = styled.div`
+  width: 32%;
 `;
 const RightSide_ = styled.div`
+  width: 32%;
 `;
 
 export default function HomepageFullContainer({
